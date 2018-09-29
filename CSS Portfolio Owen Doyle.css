@@ -1,0 +1,25 @@
+#h1{
+	color: yellow;
+	text-align: center;
+	font-family: time;
+}
+body {
+	background-color: black;
+	
+}
+.instagram{
+ color: green;
+ text-align: bottom;
+}
+p {
+	color:black;
+	background-color:white;
+	font-family: "Times New Roman";
+	font-size: 15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    overflow: hidden;
