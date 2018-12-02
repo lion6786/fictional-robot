@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang=en>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="newCSS.css"> </link>
+<title>Website Accessibility & Usability</title>
+
+</head>
+<body>
+
+	<div class="header">
+		<h2>Welcome Owen Doyle's Portfolio</h2>
+		<p>This is a work in process, I am currently taking the web developement course in Codecademy so that I will have the skills and knowledge to design this website how I want it to look. So I do want to clarify that the website doesn't look good because I am not interested in it.</p>
+	</div>
+
+	<div id="navbar">
+		<a href="OwenPortfolio.html">Home</a>
+		<a href="javascript:void(0)">About Me</a>
+		<a href="javascript:void(0)">Projects</a>
+		<a class="active" href="Usability.html">Usability and Accessibility</a>
+	</div>
+
+	<div class="row">
+
+		<div class="side">
+			<h2>About Me</h2>
+			<img src="sailing.jpg"alt="Photo of me on a sailboat"style="width:100px; height:100px;"border="1">
+			<p>I have spent all of my life living around the water or spending my time on/in it, and I wouldn't ask for it to be any other way.</p>
+		</div>
+
+		<div class="content">
+			<h3>Website Accessibility & Usability</h3>
+			<h4>What I ensured was widely accessible and usable.</h4>
+			<div class="useList">
+				<ul>
+					<li>Images</li>
+					<li>Straightforward layout</li>
+					<li>Text</li>
+					<li>Screen size</li>
+					<li>Document structure</li>
+				</ul>
+			<div>
+				<h4>Images</h4>
+			</div>
+			<div>
+				<p>I used alt text with any images such as pictures or videos so that if there was a reason that the image could not be shown, or if the user is using a text-only setting so that they will still be able to understand the sites content.</p>
+			</div>
+				<h4>Straightforward layout</h4>
+			<div>
+				<p>While designing the website I knew that I wanted it to be navigated easily and be visually appealing, therefore a two column format with a header and fixed menu were used.</p>
+			</div>
+				<h4>Text</h4>
+			<div>
+				<p>To ensure readability and proffesionalism, I chose the Arial font and large text size</p>
+			</div>
+				<h4>Screen size</h4>
+			<div>
+				<p>To make sure that the website is available to be viewed on different devices and window sizes I had the two segments stack on top of eachother if the size of the website went below a ceratin amount.</p>
+			</div>
+				<h4>Document structure</h4>
+			<div>
+				<p>When users navigate to different pages within the website I wanted to make sure that the layout remained consistent and clear. And that users understood where on the website they were able to navigate to.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
