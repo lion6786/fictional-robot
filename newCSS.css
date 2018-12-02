@@ -36,7 +36,6 @@ body {
   color: white;
 }
 
-}
 
 .sticky {
   position: fixed;
@@ -44,7 +43,7 @@ body {
   width: 100%;
 }
 
-.sticky + .content {
+.sticky + .content + .side{
   padding-top: 60px;
 }
 
@@ -60,6 +59,7 @@ body {
 /* Create two unequal columns that sit next to eachother */
 /* Left column */
 .side {
+	margin-top: 30px;
 	-ms-flex: 30%;
 	flex: 30%;
 	background-color: #f1f1f1;
@@ -67,7 +67,9 @@ body {
 }
 
 /* Main column */
-.main {
+.content {
+	padding:16px;
+	margin-top: 30px;
 	-ms-flex: 70%;
 	flex: 70%;
 	background-color: white;
@@ -75,12 +77,6 @@ body {
 }
 
 /* footer */
-.footer {
-	padding: 20px;
-	text-align: center;
-	background: #ddd;
-	position: bottom;
-}
 
 @media screen and (max-width: 700px) {
 	.row {
