@@ -1,31 +1,112 @@
 <!DOCTYPE html>
+
 <html lang=en>
 <head>
-<meta charset=utf-8>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="CSS Portfolio Owen Doyle.css"> </link>
+<link rel="stylesheet" type="text/css" href="newCSS.css">
 <title>Owen's Portfolio</title>
+
 </head>
-
-<header>
-
-</header>
-
 <body>
+
+	<div class="header">
+		<h2>Welcome to Owen Doyle's Portfolio</h2>
+		<p>Software Engineering student attending Florida Gulf Coast University</p>
+		<a href="http://www.w3.org/html/logo/">
+		<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+		</a>
+	</div>
+
+	<div id="navbar">
+		<a href="owenportfolio.html">Home</a>
+		<a class='active' href="projects.html">Projects</a>
+		<a href="Usability.html">Usability and Accessibility</a>
+		<a href="https://www.linkedin.com/in/owenpdoyle/" target=_blank>Linkedin</a>
+		<a href="FieldReport.pdf" target=_blank> Fields Report</a>
+		<a href="WorkExperience.html">Work Experience</a>
+	</div>
+
+	<div class="row">
+
+		<div class="side">
+			<h2>About Me</h2>
+			<img src="https://github.com/lion6786/fictional-robot/blob/master/sailing.jpg?raw=true" alt="Photo of me on a sailboat" style="width:400px;height:400px;">
+			<p>I have spent all of my life living around the water or spending my time on/in it, and I wouldn't ask for it to be any other way.</p>
+			<img src="https://github.com/lion6786/fictional-robot/blob/master/fraternity.jpg?raw=true" alt="In a group photo of my fraternity chapter with our flag in the background" style="width:275px; height:400px;">
+			<p>I am an active member in the Florida Xi chapter of Phi Delta Theta. Being in a fraternity has brought me on a path to becoming the best version of myself, and taught me valuable lessons along the way.</p>
+		</div>
+
+		<div class="content">
+			<h3><a href="https://scratch.mit.edu/projects/245197572/" target=_blank>My Scratch Project</a></h3>
+			<p></p>
+			<hr>
+			<h3>Work in progress...</h3>
+			<h4>Placeholder for Caesar Cipher</h4>
+
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px"
+	 		height="150px" viewBox="0 0 504 504" enable-background="new 0 0 504 504" xml:space="preserve">
+			<g id="Layer_4">
+			<polygon fill="#48C2C5" points="288.5,45.5 74.5,392.5 293.5,382.5 	"/>
+			<polygon fill="#48C2C5" points="303.5,164.5 308,379.5 434.5,373.5 	"/>
+			</g>
+			<g id="Layer_5">
+			<path fill="#653614" d="M74.333,411.666c0,0,16,22,84,34c0,0,33.667,48.002,126.667,47.668c0,0,91.332,3.33,111.666-56.003
+			c0,0,41.999-1.003,67.666-36.003C464.333,401.328,243,434.999,74.333,411.666z"/>
+			</g>
+			<g id="Layer_2">
+			<polygon fill="#991B1E" points="284,11 173,34.5 284,36 	"/>
+			</g>
+			<g id="Layer_6">
+			<path fill="#2F1010" d="M74.333,411.666c0,0,47.332,49.999,201.332,37.333c0,0,157.335,6.658,188.668-47.671s0,0,0,0
+			S207.061,437.748,74.333,411.666"/>
+			</g>
+			<g id="Layer_3">
+			<polyline fill="#2F1010" points="284,11 295,10.5 301.5,417.5 291,417.5 284,11 	"/>
+			</g>
+			</svg>
+			<div>
+
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+			Your browser does not support the HTML5 canvas tag.</canvas>
+
+			<video width="320" height="240" controls>
+  			<source src="me.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+			<br>
+			<div>
+				<h4>Sounds of the ocean</h4>
+				<audio class="audio" controls >
+				<source src="waves.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</div>
+  	</div>
+</div>
+
+	
+	
 <script>
-	window.onscroll = function() {myFuntion()};
+//for the sticky top menu
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
-	var navbar = document.getElementById("navbar");
-	var sticky = navbar.offsetTop;
-
-	function myFunction() {
-		if (window.pageYOffset > "sticky") {
-			navbar.classList.add("sticky")
-		} else {
-			navbar.classList.remove("sticky");
-		}
-	}
+//for the canvas
+var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.font = "15px Arial";
+	ctx.fillText(" ", 10, 50);
 </script>
-</body>
 
+
+</body>
 </html>

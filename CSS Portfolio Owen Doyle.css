@@ -47,17 +47,14 @@ body {
 	background-color: white;
 	
 }
-.instagram{
- color: green;
- text-align: bottom;
-}
+
 p {
 	color:black;
 	background-color:white;
 	font-family: "Times New Roman";
 	font-size: 15px;
 }
-ul {
+li {
     list-style-type: none;
     margin: 0;
     padding: 0;
