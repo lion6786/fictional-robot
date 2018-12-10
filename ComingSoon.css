@@ -4,6 +4,9 @@ body, html {
 	margin: 0;
 }
 
+#demo {
+	color: white;
+}
 .bgimg {
 	/*Background image */
 	background-image: url(mountain.jpg);
