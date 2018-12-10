@@ -1,0 +1,65 @@
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navber a {
+	float: none;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: 1500px;
+}
+
+#h1{
+	color: black;
+	text-align: center;
+	font-family: "Times New Roman";
+}
+
+#h2{
+	color: black;
+	text-align: left;
+	font-family: "Times New Roman";
+}
+
+body {
+	background-color: white;
+	
+}
+.instagram{
+ color: green;
+ text-align: bottom;
+}
+p {
+	color:black;
+	background-color:white;
+	font-family: "Times New Roman";
+	font-size: 15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    overflow: hidden;

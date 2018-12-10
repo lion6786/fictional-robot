@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="CSS Portfolio Owen Doyle.css"> </link>
+<title>Owen's Portfolio</title>
+</head>
+
+<header>
+
+</header>
+
+<body>
+<script>
+	window.onscroll = function() {myFuntion()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset > "sticky") {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>
+</body>
+
+</html>
